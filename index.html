@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car Price Prediction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚗 Car Price Prediction</h1>
+    <form id="carForm">
+      <label for="brand">Car Brand:</label>
+      <select id="brand">
+        <option>Maruti</option>
+        <option>Hyundai</option>
+        <option>Honda</option>
+        <option>Toyota</option>
+        <option>Ford</option>
+        <option>BMW</option>
+        <option>Audi</option>
+      </select>
+
+      <label for="modelName">Model Name:</label>
+      <input type="text" id="modelName" placeholder="e.g., Swift">
+
+      <label for="year">Year of Manufacture:</label>
+      <input type="number" id="year" min="1990" max="2025" value="2015">
+
+      <label for="kms">Kilometers Driven:</label>
+      <input type="number" id="kms" placeholder="e.g., 30000">
+
+      <label for="fuel">Fuel Type:</label>
+      <select id="fuel">
+        <option>Petrol</option>
+        <option>Diesel</option>
+        <option>CNG</option>
+        <option>LPG</option>
+        <option>Electric</option>
+      </select>
+
+      <label for="transmission">Transmission:</label>
+      <select id="transmission">
+        <option>Manual</option>
+        <option>Automatic</option>
+      </select>
+
+      <label for="owner">Owner Type:</label>
+      <select id="owner">
+        <option>First</option>
+        <option>Second</option>
+        <option>Third</option>
+        <option>Fourth & Above</option>
+      </select>
+
+      <button type="submit">Predict Price</button>
+    </form>
+
+    <div class="output" id="outputBox">
+      <!-- Prediction result will appear here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
